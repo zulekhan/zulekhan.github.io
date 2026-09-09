@@ -234,34 +234,37 @@
     .project-link:hover { gap: 0.7rem; }
     .project-link.disabled { color: var(--muted); pointer-events: none; }
 
-   
-     <!-- SQL SECTION -->
-  <section id="sql" style="background: #F3F0FB;">
-    <p class="section-label">Data Analysis</p>
-    <h2 class="section-title">SQL Projects</h2>
-    <p class="section-sub">Analytical projects using SQL to query, clean, and explore datasets. More projects being added as the portfolio grows.</p>
-
-    <div class="sql-grid">
-      <div class="sql-card">
-        <div class="sql-icon">🛍️</div>
-        <h3 class="sql-title">Retail Sales Analysis</h3>
-        <p class="sql-desc">SQL analysis of 2,000 retail transactions. 10 queries covering sales trends, customer behavior, and operational insights.</p>
-        <a href="https://github.com/zulekhan/zulekhan.github.io/tree/main/sql" target="_blank" style="display: inline-block; margin-top: 1rem; color: var(--plum); font-weight: 500; text-decoration: none;">View Project →</a>
-      </div>
-      <div class="sql-card">
-        <div class="sql-icon">🦠</div>
-        <h3 class="sql-title">COVID-19 SQL & Python</h3>
-        <p class="sql-desc">SQL fundamentals and data analysis. 10 lessons covering filtering, aggregation, JOINs, subqueries, window functions, and visualization.</p>
-        <a href="https://github.com/zulekhan/covid-epidemiology" target="_blank" style="display: inline-block; margin-top: 1rem; color: var(--plum); font-weight: 500; text-decoration: none;">View Project →</a>
-      </div>
-      <div class="sql-card">
-        <div class="sql-icon">📈</div>
-        <h3 class="sql-title">Data Analytics Portfolio</h3>
-        <p class="sql-desc">4+ years of clinical informatics experience plus Master's in Data Science. Real-world healthcare data expertise.</p>
-        <a href="https://github.com/zulekhan" target="_blank" style="display: inline-block; margin-top: 1rem; color: var(--plum); font-weight: 500; text-decoration: none;">View GitHub →</a>
-      </div>
-    </div>
-  </section>
+    /* ── SQL SECTION ── */
+    .sql-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.2rem;
+    }
+    .sql-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.4rem 1.5rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .sql-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(45,27,105,0.08);
+    }
+    .sql-icon { font-size: 1.5rem; margin-bottom: 0.7rem; }
+    .sql-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem; font-weight: 700;
+      color: var(--ink); margin-bottom: 0.4rem;
+    }
+    .sql-desc { font-size: 0.83rem; color: var(--muted); line-height: 1.6; }
+    .coming-badge {
+      display: inline-block;
+      background: #f3f0f9; color: var(--muted);
+      font-size: 0.68rem; font-weight: 500; letter-spacing: 0.06em;
+      padding: 0.2rem 0.65rem; border-radius: 999px;
+      margin-top: 0.8rem; text-transform: uppercase;
+    }
 
     /* ── ABOUT ── */
     .about-grid {
@@ -345,7 +348,7 @@
     <div class="hero-content">
       <span class="hero-tag">📊 Data Science Portfolio</span>
       <h1>Turning data into<br /><span>compelling stories</span></h1>
-      <p>Hi, I'm Zulekha — an recent MS Data Science Graduate from Eastern University, passionate about data visualization, SQL, and using data to solve real-world problems.</p>
+      <p>Hi, I'm Zulekha — a recent MS Data Science Graduate from Eastern University, passionate about data visualization, SQL, and using data to solve real-world problems.</p>
       <div class="hero-btns">
         <a href="#tableau" class="btn-primary">View my work →</a>
         <a href="https://public.tableau.com/app/profile/zulekha.mohamed/vizzes" target="_blank" class="btn-secondary">Tableau Public ↗</a>
@@ -393,31 +396,35 @@
         </div>
       </div>
 
-      <!-- Placeholder 2 -->
+      <!-- Project 2 — UNESCO Heritage -->
       <div class="project-card">
-        <div class="project-thumb coming">📈</div>
+        <div class="project-thumb">🌏</div>
         <div class="project-body">
-          <p class="project-type">Tableau · Coming Soon</p>
-          <h3 class="project-title">Next Viz Project</h3>
-          <p class="project-desc">The next dashboard is in progress. Check back soon!</p>
+          <p class="project-type">Tableau · Cultural Heritage</p>
+          <h3 class="project-title">UNESCO World Heritage Sites</h3>
+          <p class="project-desc">An interactive exploration of UNESCO World Heritage Sites globally, analyzing geographic distribution, categories, and cultural significance across regions.</p>
           <div class="project-tags">
-            <span class="tag">TBD</span>
+            <span class="tag">World Map</span>
+            <span class="tag">Geographic Analysis</span>
+            <span class="tag">Category Breakdown</span>
           </div>
-          <span class="project-link disabled">Coming soon</span>
+          <a href="https://public.tableau.com/app/profile/zulekha.mohamed/viz/UNESCOWorldHeritagesite/UNESCOheritage" target="_blank" class="project-link">View on Tableau Public →</a>
         </div>
       </div>
 
-      <!-- Placeholder 3 -->
+      <!-- Project 3 — Louisville Crime -->
       <div class="project-card">
-        <div class="project-thumb coming">📊</div>
+        <div class="project-thumb">🚨</div>
         <div class="project-body">
-          <p class="project-type">Tableau · Coming Soon</p>
-          <h3 class="project-title">Next Viz Project</h3>
-          <p class="project-desc">More dashboards coming as the portfolio grows!</p>
+          <p class="project-type">Tableau · Public Safety</p>
+          <h3 class="project-title">Louisville KY Crime 2026</h3>
+          <p class="project-desc">An analysis of crime data in Louisville, Kentucky, examining trends, patterns, and geographic hotspots to inform public safety insights.</p>
           <div class="project-tags">
-            <span class="tag">TBD</span>
+            <span class="tag">Crime Analytics</span>
+            <span class="tag">Geographic Mapping</span>
+            <span class="tag">Trend Analysis</span>
           </div>
-          <span class="project-link disabled">Coming soon</span>
+          <a href="https://public.tableau.com/app/profile/zulekha.mohamed/viz/LouisvilleKYcrime2026/Dashboard1" target="_blank" class="project-link">View on Tableau Public →</a>
         </div>
       </div>
 
@@ -432,22 +439,22 @@
 
     <div class="sql-grid">
       <div class="sql-card">
-        <div class="sql-icon">🗄️</div>
-        <h3 class="sql-title">SQL Projects Coming Soon</h3>
-        <p class="sql-desc">Working on SQL analysis projects to complement the Tableau dashboards. Check back soon!</p>
-        <span class="coming-badge">In progress</span>
+        <div class="sql-icon">🛍️</div>
+        <h3 class="sql-title">Retail Sales Analysis</h3>
+        <p class="sql-desc">SQL analysis of 2,000 retail transactions. 10 queries covering sales trends, customer behavior, and operational insights.</p>
+        <a href="https://github.com/zulekhan/zulekhan.github.io/tree/main/sql" target="_blank" style="display: inline-block; margin-top: 1rem; color: var(--plum); font-weight: 500; text-decoration: none;">View Project →</a>
       </div>
       <div class="sql-card">
-        <div class="sql-icon">🔍</div>
-        <h3 class="sql-title">Exploratory Analysis</h3>
-        <p class="sql-desc">Data cleaning, aggregation, and exploratory queries on real-world datasets.</p>
-        <span class="coming-badge">Coming soon</span>
+        <div class="sql-icon">🦠</div>
+        <h3 class="sql-title">COVID-19 SQL & Python</h3>
+        <p class="sql-desc">SQL fundamentals and data analysis. 10 lessons covering filtering, aggregation, JOINs, subqueries, window functions, and visualization.</p>
+        <a href="https://github.com/zulekhan/covid-epidemiology" target="_blank" style="display: inline-block; margin-top: 1rem; color: var(--plum); font-weight: 500; text-decoration: none;">View Project →</a>
       </div>
       <div class="sql-card">
-        <div class="sql-icon">📐</div>
-        <h3 class="sql-title">Data Modeling</h3>
-        <p class="sql-desc">Structuring and modeling data to support reporting and visualization workflows.</p>
-        <span class="coming-badge">Coming soon</span>
+        <div class="sql-icon">📈</div>
+        <h3 class="sql-title">Data Analytics Portfolio</h3>
+        <p class="sql-desc">4+ years of clinical informatics experience plus Master's in Data Science. Real-world healthcare data expertise.</p>
+        <a href="https://github.com/zulekhan" target="_blank" style="display: inline-block; margin-top: 1rem; color: var(--plum); font-weight: 500; text-decoration: none;">View GitHub →</a>
       </div>
     </div>
   </section>
@@ -458,7 +465,7 @@
       <div class="about-text">
         <p class="section-label">About Me</p>
         <h2 class="section-title">Hi, I'm Zulekha 👋</h2>
-        <p>I'm a <strong> recent MS Data Science Graduate from Eastern University</strong>, passionate about using data to uncover meaningful insights and tell compelling stories.</p>
+        <p>I'm a <strong>recent MS Data Science Graduate from Eastern University</strong>, passionate about using data to uncover meaningful insights and tell compelling stories.</p>
         <p>I'm currently building my skills in <strong>Python, SQL, R, and Tableau</strong>, with a focus on data visualization and analysis. This portfolio documents my growth as I take on new projects and challenges.</p>
         <p>Inspired by The Data School community, I'm committed to building a portfolio that reflects real analytical thinking and design craft.</p>
         <div style="margin-top: 1.5rem;">
@@ -467,7 +474,7 @@
       </div>
       <div class="about-stats">
         <div class="stat-box">
-          <div class="stat-number">1</div>
+          <div class="stat-number">3</div>
           <div class="stat-label">Tableau dashboards published</div>
         </div>
         <div class="stat-box">
@@ -504,3 +511,4 @@
 
 </body>
 </html>
+      
